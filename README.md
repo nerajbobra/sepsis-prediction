@@ -15,7 +15,7 @@ To run the code in this project, run the following notebooks:
 
 The remainder of this readme will cover the different steps in the analysis pipeline.
 
-## 1. Redefining Output Labels
+## 1. Redefine Output Labels
 According to the PhysioNet Challenge details, the labels for the provided data are as follows:
 <br>For sepsis patients, SepsisLabel is 1 if `t≥tsepsis−6` and 0 if `t<tsepsis−6`
 <br>For non-sepsis patients, SepsisLabel is 0
@@ -137,13 +137,13 @@ history = model.fit([X_train_cont, X_train_cat],
 ```
 
 ## 8. Evaluate the Model
-The ROC of the validation set:
-![Validation ROC](https://github.com/nerajbobra/sepsis-prediction/blob/master/figures/ROC_val.png)
 
-The ROC of the test (holdout) set:
-![Test ROC](https://github.com/nerajbobra/sepsis-prediction/blob/master/figures/ROC_test.png)
+The ROC plots for both validation and test sets were calculated as measures of model performance:
+Validation ROC             |  Test ROC
+:-------------------------:|:-------------------------:
+![](https://github.com/nerajbobra/sepsis-prediction/blob/master/figures/ROC_val.png)  |  ![](https://github.com/nerajbobra/sepsis-prediction/blob/master/figures/ROC_test.png)
 
 As can be seen from the ROC plots, the performance on the training and test sets is very similar. Therefore, it would be expected that the model performance would be comparable to new data collected in the field.
 
 ## Next Steps
-Beyond experimenting with different model architectures, there are many potential improvements that can be made to this project. Changing the window size will have a large effect on the performance of the model, as has been demonstrated by other researchers. Additionally, trying a different strategy for handling missing data, such as interpolation, may also yield improvements in performance. 
+Beyond experimenting with different model architectures, there are many potential improvements that can be made to this algorithm. Changing the window size will have a large effect on the performance of the model, as has been demonstrated by other researchers. Additionally, trying a different strategy for handling missing data, such as interpolation, may also yield improvements in performance. 
