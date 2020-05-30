@@ -1,7 +1,7 @@
 # sepsis-prediction
 Sepsis Prediction using Clinical Data (PhysioNet Computing in Cardiology Challenge 2019)
 
-This project implements a sepsis prediction model using various clinical data sources. Specifically, the model takes 10 hours of input data and predicts the probability of sepsis within the next hour. On the test set, the model has an AUC of 0.76.
+This project implements an LSTM-based sepsis prediction model using various clinical data sources. Specifically, the model takes 10 hours of input data and predicts the probability of sepsis within the next hour. On the test set, the model has an AUC of 0.76.
 
 The data used for this project is from the 2019 PhysioNet Computing in Cardiology Challenge. The following link provides more information about the data and a link to download: https://physionet.org/content/challenge-2019/1.0.0/
 
