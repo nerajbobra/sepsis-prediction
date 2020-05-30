@@ -137,11 +137,11 @@ history = model.fit([X_train_cont, X_train_cat],
 ```
 
 ## 8. Evaluate the Model
-The ROC of the validation set:
-![Validation ROC](https://github.com/nerajbobra/sepsis-prediction/blob/master/figures/ROC_val.png)
 
-The ROC of the test (holdout) set:
-![Test ROC](https://github.com/nerajbobra/sepsis-prediction/blob/master/figures/ROC_test.png)
+The ROC plots for both validation and test sets were calculated as measures of model performance:
+Validation ROC             |  Test ROC
+:-------------------------:|:-------------------------:
+![](https://github.com/nerajbobra/sepsis-prediction/blob/master/figures/ROC_val.png)  |  ![](https://github.com/nerajbobra/sepsis-prediction/blob/master/figures/ROC_test.png)
 
 As can be seen from the ROC plots, the performance on the training and test sets is very similar. Therefore, it would be expected that the model performance would be comparable to new data collected in the field.
 
