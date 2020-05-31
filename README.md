@@ -115,7 +115,7 @@ model_add = Add()([model1, model2])
 output = Dense(2, kernel_regularizer=l2(0.001), activation='softmax')(model_add)
 
 model = Model(inputs=[input1, input2], outputs=output)
-model.compile(loss='categorical_crossentropy', optimizer='adam'
+model.compile(loss='categorical_crossentropy', optimizer='adam')
 ```
 
 ## 7. Train the Model
